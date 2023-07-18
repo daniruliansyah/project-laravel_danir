@@ -46,8 +46,9 @@ class PekerjaController extends Controller{
         return redirect ('pekerja');
         //dd('update');
     }
-    public function destroy(string $id): RedirectResponse {
-        dd('store');
+    public function destroy(string $id) {
+        DB::table('pekerja')->where('id_pekerja', $id)->delete();
+        return redirect('pekerja');
     }
     
     public function art()

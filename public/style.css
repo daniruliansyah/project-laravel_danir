@@ -99,6 +99,8 @@ a.button {
 
 button.delete {
     background-color: red;
+    color: white;
+    font-style: italic;
 }
 
 input {
