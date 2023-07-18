@@ -97,6 +97,10 @@ a.button {
     color: black;
 }
 
+button.delete {
+    background-color: red;
+}
+
 input {
     margin-left: 20px;
 }

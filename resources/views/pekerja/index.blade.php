@@ -35,6 +35,7 @@
                     <td>{{$pekerja->no_hp_pekerja}}</td>
                     <td>{{$pekerja->foto_pekerja}}</td>
                     <td><button type="button"><a class='button' href='pekerja/{{$pekerja->id_pekerja}}/edit'>edit</a></button></td>
+                    <td><button class='delete' type='button'><a href='pekerja/{{$pekerja->id_pekerja}}/delete'>delete</a></button></td>
                     
                 </tr>
             @endforeach 

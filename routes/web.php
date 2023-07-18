@@ -87,7 +87,7 @@ Route::get('pekerja/create', [PekerjaController::class, 'create'])->name('pekerj
 Route::post('pekerja/add', [PekerjaController::class, 'store'])->name('pekerja.store');
 Route::get('pekerja/{id_pekerja}/edit', [PekerjaController::class, 'edit'])->name('pekerja.edit');
 Route::put('pekerja/{id_pekerja}/update', [PekerjaController::class, 'update'])->name('pekerja.update');
-Route::delete('pekerja/{id}', [PekerjaController::class, 'destroy'])->name('pekerja.destroy');
+Route::delete('pekerja/{id_pekerja}/delete', [PekerjaController::class, 'destroy'])->name('pekerja.destroy');
 
 Route::get('pembayaran', [PembayaranController::class, 'index'])->name('pembayaran.index');
 Route::get('pembayaran/create', [PembayaranController::class, 'create'])->name('pembayaran.create');
