@@ -1,5 +1,6 @@
 <?php
 
+//use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BankController;
 use App\Http\Controllers\CustomerController;
@@ -30,6 +31,8 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+//Route::post('logout', LogoutController::class)->middleware('auth');
 
 //tugas routes & controller
 
